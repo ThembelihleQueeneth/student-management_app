@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Student</title>
+</head>
+<body>
+  <h1>Edit Student</h1>
+  <form method="POST" action="/edit/<%= student.id %>">
+    <p><input type="text" name="name" value="<%= student.name %>" required></p>
+    <p><input type="number" name="age" value="<%= student.age %>"></p>
+    <p><input type="text" name="course" value="<%= student.course %>"></p>
+    <button type="submit">Update</button>
+  </form>
+  <a href="/">Back</a>
+</body>
+</html>
